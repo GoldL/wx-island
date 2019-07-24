@@ -1,5 +1,5 @@
 {
   "usingComponents":{
-    "v-like": "/components/like/like"
+    "like-cmp": "/components/like/like"
   } 
 }
