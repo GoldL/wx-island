@@ -1,10 +1,6 @@
-import {
-  classicLatestUrl
-} from '../../api/index.js'
-import {
-  HTTP
-} from '../../utils/http.js'
-const http = new HTTP()
+import { ClassicModel } from '../../models/classic'
+
+const classic = new ClassicModel()
 
 Page({
 
@@ -19,11 +15,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    http.request({
-      url: classicLatestUrl,
-      success: res => {
-        console.log(res)
-      }
+    classic.getLatest(res => {
+      this.setData({
+        classic: res
+      })
     })
   }
 })

@@ -1,1 +1,1 @@
-<like-cmp></like-cmp>
+<like-cmp like="{{classic.likeStatus}}" count="{{classic.favNums}}"></like-cmp>
