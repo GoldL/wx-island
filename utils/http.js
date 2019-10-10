@@ -7,7 +7,7 @@ import {
 
 class HTTP {
   request(params) {
-    if (params.method) {
+    if (!params.method) {
       params.method = 'GET'
     }
     wx.request({
@@ -21,7 +21,7 @@ class HTTP {
       success: res => {
         let code = res.statusCode.toString()
         if (code.startsWith('2')) {
-          params.success(res.data)
+          params.success && params.success(res.data)
         } else {
           const errorCode = res.data.errorCode
           this._showErr(errorCode)

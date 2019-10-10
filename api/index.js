@@ -1,5 +1,9 @@
 const classicLatestUrl = 'classic/latest'
+const likeUrl = 'like'
+const likeCancelUrl = 'like/cancel'
 
 export {
-  classicLatestUrl
+  classicLatestUrl,
+  likeUrl,
+  likeCancelUrl
 }
