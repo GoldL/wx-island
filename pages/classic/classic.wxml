@@ -1,1 +1,2 @@
-<like-cmp like="{{classic.likeStatus}}" count="{{classic.favNums}}"></like-cmp>
+<v-like like="{{classic.likeStatus}}" count="{{classic.favNums}}" />
+<v-movie img="{{classic.image}}" content="{{classic.content}}" />
