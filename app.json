@@ -8,5 +8,8 @@
     "navigationBarTitleText": "wx-island",
     "navigationBarTextStyle": "black"
   },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "sitemapLocation": "sitemap.json"
 }
