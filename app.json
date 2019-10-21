@@ -2,7 +2,8 @@
   "pages": [
     "pages/classic/classic",
     "pages/my/my",
-    "pages/book/book"
+    "pages/book/book",
+    "pages/book-detail/book-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
